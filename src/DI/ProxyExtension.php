@@ -103,7 +103,7 @@ class ProxyExtension extends CompilerExtension
 				$def->setTags(array_diff_key($def->getTags(), [self::TAG_LAZY => null]));
 				continue;
 			}
-			$def->addTag(self::TAG_LAZY, $def->getImplement() ?: $def->getClass());
+			$def->addTag(self::TAG_LAZY, $def->getType());
 		}
 	}
 
