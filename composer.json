@@ -1,5 +1,5 @@
 {
-  "name": "lookyman/nette-proxy",
+  "name": "adt/nette-proxy",
   "description": "Integration of Proxy Manager into Nette Framework",
   "keywords": ["Nette", "proxy", "lazy"],
   "license": "MIT",
@@ -8,10 +8,15 @@
       "name": "Lukáš Unger",
       "email": "looky.msc@gmail.com",
       "homepage": "https://lookyman.net"
+    },
+    {
+      "name": "Apps Dev Team",
+      "email": "hello@appsdevteam.com",
+      "homepage": "https://www.appsdevteam.com"
     }
   ],
   "require": {
-    "ocramius/proxy-manager": "^2.0",
+    "friendsofphp/proxy-manager-lts": "^1.0",
     "nette/di": "^2.4|^3.0",
     "nette/php-generator": "^2.6|^3.0|^4.0"
   },
@@ -21,7 +26,7 @@
     "kdyby/console": "^2.6"
   },
   "suggest": {
-    "kdyby/console": "For pre-generating proxies via a command"
+    "contributte/console": "For pre-generating proxies via a command"
   },
   "autoload": {
     "psr-4": {
